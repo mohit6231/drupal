@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - d8campaign
+  enforced:
+    module:
+      - d8campaign
+name: 'Campaign Type'
+vid: campaign_type
+description: 'Used for different campaigns'
+weight: 0

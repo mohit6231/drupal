@@ -1,0 +1,114 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.campaign_type.field_account_declaration
+    - field.field.taxonomy_term.campaign_type.field_email_subject
+    - field.field.taxonomy_term.campaign_type.field_email_template
+    - field.field.taxonomy_term.campaign_type.field_insurance_declaration_pdf
+    - field.field.taxonomy_term.campaign_type.field_landing_page_link
+    - field.field.taxonomy_term.campaign_type.field_sms_template
+    - field.field.taxonomy_term.campaign_type.field_submission_email
+    - field.field.taxonomy_term.campaign_type.field_submission_email_subject
+    - field.field.taxonomy_term.campaign_type.field_submission_sms
+    - taxonomy.vocabulary.campaign_type
+  module:
+    - file
+    - text
+    - d8campaign
+  enforced:
+    module:
+      - d8campaign
+id: taxonomy_term.campaign_type.default
+targetEntityType: taxonomy_term
+bundle: campaign_type
+mode: default
+content:
+  field_account_declaration:
+    weight: 10
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_email_subject:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_email_template:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_insurance_declaration_pdf:
+    weight: 11
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_landing_page_link:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_sms_template:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_submission_email:
+    weight: 9
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_submission_email_subject:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_submission_sms:
+    weight: 7
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 8
+    region: content
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true

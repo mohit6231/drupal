@@ -1,0 +1,286 @@
+<!-- Signature overview template -->
+{% set module_path = _self|split('/templates') %}
+{% if not is_accepted %}
+
+
+
+<div class="signature-landing-page">
+	<div class="header-section">
+		{% include '@d8campaign/campaign-header.html.twig' with {'left_logo': 'classic/single-New-Logo_2016.jpg', 'right_logo': ''} %}
+		<div
+			class="banner-section">
+			<!--<img src="{{ module_path[0] }}/images/signature_account_banner.jpg" alt="logo" /> -->
+			<div class="banner-overlay-content">
+				<div class="content">
+					<p>Classic Savings Account</p>
+					<p>More Features. More Benefits. More Value</p>
+				</div>
+				<a href="#upgrade-section" class="btn-sign">Upgrade Now</a>
+			</div>
+		</div>
+	</div>
+	<div class="content-section">
+		<div class="account-details-section">
+			<h3 class="user-name">Welcome
+				<strong>{{ variable1 }}</strong>
+			</h3>
+			<div class="ac-detail-block">
+				<h4 class="ac-title">Your Account details</h4>
+				<div class="ac-number">
+					<p class="ac-number-title">Account No :</p>
+					<p class="ac-number-value">{{ variable2 }}</p>
+				</div>
+				<div class="ac-type">
+					<p class="ac-type-title">Existing Account type :</p>
+					<p class="ac-type-value">{{ variable3 }}</p>
+				</div>
+			</div>
+		</div>
+		<div class="overview-sg-ac">
+			<h2 class="section-title">
+				<span>Overview of Classic Saving Account</span>
+			</h2>
+			<div class="content-section">
+				<p class="silver">Beyond Banking</p>
+				<h2>A feature-rich Savings Account that gives you more value for every Rupee invested.</h2>
+				<p>SVC Bank is honored to be your preferred Banking Partner. We believe in creating value for you by offering new and better banking experiences that shall also help you save and invest smarter. Classic Savings Account is our latest innovation designed to offer you an upgraded savings account experience with many banking privileges made available at an extremely low cost. Let’s explore.</p>
+			</div>
+			<div class="row-section">
+				<div class="sg-col-4">
+					<div class="img-section">
+						<img src="{{ module_path[0] }}/images/dedicated_relationship_thumb.jpg" alt="image"/>
+					</div>
+					<div class="content-section">
+						<h2 class="ov-title">Dedicated Relationship Manager</h2>
+						<p>Banking just got simpler, with the appointment of a Dedicated Manager for you who will be exclusively handling your banking needs, as per your instrutions</p>
+					</div>
+				</div>
+				<div class="sg-col-4">
+					<div class="img-section">
+						<img src="{{ module_path[0] }}/images/service_benefit_thumb.jpg" alt="image"/>
+					</div>
+
+					<div class="content-section">
+						<h2 class="ov-title">Serve Benefits</h2>
+						<p>Anytime/anywhere banking through complimentary SVC Debit Card with enhanced limits and host of offers & privileges</p>
+					</div>
+				</div>
+				<div class="sg-col-4">
+					<div class="img-section">
+						<img src="{{ module_path[0] }}/images/offers_rewards_thumb.jpg" alt="image"/>
+					</div>
+
+					<div class="content-section">
+						<h2 class="ov-title">Offers and Rewards Program</h2>
+						<p>As your Banking Partner, we pay close attention to your need.That's why our dedicated loyalty progran offers you attractive, intelligent rewards on every transaction made.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+    <div class="sva-section">
+      <div class="img-section">
+        <img src="{{ module_path[0] }}/images/classic/2.jpg" alt="signature-logo"/>
+      </div>
+      <div class="content-section">
+        <div class="content">
+          <p class="silver">Special Value Additions</p>
+          <h2>Insurance, Concierge Services and Airport Lounges. May your every journey be safe and relaxing</h2>
+
+          <p class="sva-ul-title">Insurance Benefits</p>
+          <ul>
+            <li>Complimentary Personal Accidental Death Cover worth INR 2 Lakhs**</li>
+            <li>Additional, Complimentary Personal Accidental Death Cover worth INR 2 Lakhs*</li>
+          </ul>
+          <p class="sva-ul-title">Travel Benefits</p>
+          <ul>
+            <li>8 Free Domestic Airport Lounge Access* per year, i.e. 2 visits per quarter</li>
+            <li>2 Free International Airport Lounge Access* per year</li>
+			<li>24/7 Free Concierge Services*</li>
+          </ul>
+
+          <p class="sva-small">* Features offered by RuPay Platinum Debit Card. Please visit www.rupay.co.in for more details.</p>
+          <p class="sva-small">** Sponsored by SVC Bank & underwritten by Aditya Birla Health Insurance Co. Ltd.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="sh-section">
+      <p class="silver">Classic Saving AC Highlights</p>
+      <h2 class="sh-title">Turn on a new shopping experience with Platinum benefits</h2>
+      <div class="row-section">
+        <div class="sh-col-2">
+          <div class="content">
+            <ul>
+              <li>Complimentary RuPay Platinum Debit Card with waiver of Annual Maintenance Charges</li>
+              <li>Debit Card cash withdrawal/Ecom/POS limit – INR 25,000/- per day</li>
+              <li>Free transactions on SVC Bank ATMs</li>
+              
+            </ul>
+          </div>
+        </div>
+        <div class="sh-col-2">
+        <div class="content">
+          <ul>
+            <li>5 free transactions on other Bank ATMs</li>
+            <li>24/7 access to Concierge Services*</li>
+            <li>Earn attractive Reward Points on every transaction, redeemable on <a href="https://rewards.svcbank.com" target="_blank">www.rewards.svcbank.com</a></li>
+            
+          </ul>
+          </div>
+        </div>
+      </div>
+      <p class="sh-tc">*Terms & condition apply</p>
+    </div>
+
+    <div class="shq-section">
+      <div class="l-content">
+        <h1>Still Have Query ?</h1>
+        <div>
+          <a id="faqBtn" class="btn-query">Click Query</a><p>to view detailed FAQs</p>
+        </div>
+      </div>
+      <div class="R-content">
+        <img src="{{ module_path[0] }}/images/help_image.png" alt="signature-logo"/>
+      </div>
+    </div>
+
+    <div class="sh-section">
+      <p class="silver">Eligibility</p>
+      <h2 class="sh-title">Welcome to a world of exclusive banking benefits, customised to suit your preferences.</h2>
+      <div class="row-section">
+        <div class="sh-col-2">
+          <div class="content">
+            <ul>
+              <li>Eligible to all saving account with Privilege Relationship with SVC Bank</li>
+            </ul>
+          </div>
+        </div>
+        <div class="sh-col-2">
+        <div class="content">
+          <ul>
+            <li>Minimum average quarterly balance of Rs 2 Lakh*</li>
+          </ul>
+          </div>
+        </div>
+      </div>
+      <p class="sh-tc">*Terms & condition apply</p>
+    </div>
+
+    <div class="sh-approve-section" id="upgrade-section">
+      <h1>Whether it’s traditional banking, or a flashy new Debit Card, complimentary Insurance benefits or preferential Loan rates, SVC Bank Classic Savings Account brings more value to you all the way. Change the way you bank.</h1>
+        <div class="sha-button">
+          <a href="#" class="btn-info">Need more information</a>
+          <a class="btn-continue" id="myBtn">Yes, continue</a>
+        </div>
+		<div class="error-msg" style="color:red;text-align: center;margin-top: 10px;"></div>
+    </div>
+</div>
+{% include '@d8campaign/campaign-footer.html.twig' %}
+</div>
+<!-- Let's output the three variables passed to this template -->
+
+<div id="myModal" class="modal">
+<div class="modal-content">
+<span class="close">&times;</span>
+<div class="otp-section">
+	<div class="otp-img"><img src="{{ module_path[0] }}/images/password_icon.png" alt="otp-image"/></div>
+	<h1>OTP</h1>
+	<p>Kindly Enter the One Time Password (OTP) sent to your registered mobile number.</p>
+	<form id="otp-form">
+		<div class="otp-input">
+			<input type="text" name="ot1" id="ot1" maxlength="1" required>
+			<input type="text" name="ot2" id="ot2" maxlength="1" required>
+			<input type="text" name="ot3" id="ot3" maxlength="1" required>
+			<input type="text" name="ot4" id="ot4" maxlength="1" required>
+			<input type="text" name="ot5" id="ot5" maxlength="1" required>
+			<input type="text" name="ot6" id="ot6" maxlength="1" required>
+		</div>
+		<input type="hidden" value="classic" name="cvalue" id="cvalue">
+		<div class="error-msg-otp"></div>
+		<input type="submit" value="submit" class="otp-submit">
+		<input type="button" value="Resend SMS" class="otp-resend">
+	</form>
+</div>
+</div>
+</div>
+
+
+<div id="faqModal" class="modal">
+<div class="modal-content">
+<span class="closefaq">&times;</span>
+<div class="FAQ-section">
+	<h1>FAQs</h1>
+	<div class="main">
+		<!-- faq block start -->
+		<div class="faq-wrapper">
+			<div class="heading open">What is the AQB requirement of SB Classic Account?<span class="arrow"></span></div>
+			<div class="content" style="display:block">AQB requirement of SB Classic account is INR 5000</div>
+		</div>
+		<!-- faq block end -->
+		<!-- faq block start -->
+		<div class="faq-wrapper">
+			<div class="heading head-back">What are the charges if Average Quarterly Balance (AQB) is not maintained?<span class="arrow"></span></div>
+			<div class="content">Charges of Rs. 150 is applicable per quarter if AQB is not maintained</div>
+		</div>
+		<!-- faq block end -->
+		<!-- faq block start -->
+		<div class="faq-wrapper">
+			<div class="heading head-back">What are the Insurance benefits associated with SB Classic Account?<span class="arrow"></span></div>
+			<div class="content">Every primary holder of a Classic Savings account receives a complementary Accidental Death Insurance Cover of Rs. 2 Lakhs, sponsored by SVC Bank and underwritten by Aditya Birla Health insurance Co. Ltd.</div>
+		</div>
+		<!-- faq block end -->
+		<!-- faq block start -->
+		<div class="faq-wrapper">
+			<div class="heading head-back">What are the Debit Card features associated with SB Classic Account?<span class="arrow"></span></div>
+			<div class="content">
+				<ul>
+					<li>Classic Account is entitled to receive a complimentary Rupay Platinum Debit Card with no Annual Maintenance.</li>
+					<li>Rupay Platinum Debit Card comes with an Accidental Death Insurance Cover of INR 2,00,000*</li>
+					<li>This Card offers customers complimentary access to airport lounges*</li>
+				</ul>
+				<span>* Terms and Conditions Apply</span>
+			</div>
+		</div>
+		<!-- faq block end -->
+	</div>
+</div>
+</div>
+</div>
+
+{% else %}
+	<div class="signature-landing-page accepted">
+		<div class="header-section">
+			<div class="top-section">
+				<div class="logo-left">
+					<img src="{{ module_path[0] }}/images/svc_bank_logo_gold.png" alt="logo"/>
+				</div>
+				<div class="logo-right">
+					<img src="{{ module_path[0] }}/images/signature_account_logo.png" alt="signature-logo"/>
+				</div>
+			</div>
+		</div>
+			
+		<div class="already">You are already submitted the consent form.</div>
+		
+		<div class="footer-section">
+			<div class="footer-one">
+				<div class="left-section">
+					<h2>Follow us</h2>
+					<img src="{{ module_path[0] }}/images/fb.png" class="social-icons" />
+					<img src="{{ module_path[0] }}/images/twitter.png" class="social-icons" />
+					<img src="{{ module_path[0] }}/images/in.png" class="social-icons" />
+					<img src="{{ module_path[0] }}/images/insta.png" class="social-icons" />
+				</div>
+				<div class="right-section">
+					<h2>SVC Care No.</h2>
+					<p>1800 313 2120</p>
+				</div>
+			</div>
+			<div class="footer-two">
+				<p>Copyright @ 2019 SVC Co-Operative Bank Ltd.All Right Reserved</p>
+			</div>
+		</div>
+	</div>
+	
+
+{% endif %}

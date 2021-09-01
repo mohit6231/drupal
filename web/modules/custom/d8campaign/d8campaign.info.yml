@@ -1,0 +1,16 @@
+name: Campaign Module
+description: Custom Campaign module D8
+type: module
+core: 8.x
+configure: d8campaign.admin_settings
+
+dependencies:
+  - csv_serialization 
+  - node
+  - options
+  - rest
+  - serialization
+  - taxonomy
+  - user
+  - views_bulk_operations
+  - views_data_export

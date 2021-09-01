@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_submission_email
+    - taxonomy.vocabulary.campaign_type
+  module:
+    - d8campaign
+  enforced:
+    module:
+      - d8campaign
+id: taxonomy_term.campaign_type.field_submission_email
+field_name: field_submission_email
+entity_type: taxonomy_term
+bundle: campaign_type
+label: 'Submission Email Body'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

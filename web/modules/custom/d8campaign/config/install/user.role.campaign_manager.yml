@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - d8campaign
+  enforced:
+    module:
+      - d8campaign
+id: campaign_manager
+label: 'campaign Manager'
+weight: 3
+is_admin: null
+permissions:
+  - 'view campaign uploader'

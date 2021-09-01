@@ -1,0 +1,81 @@
+d8campaign.campaignform:
+ path: 'campaign-add-customers'
+ defaults:
+  _form: '\Drupal\d8campaign\Form\CampaignForm'
+  _title: 'Add Customers to Campaigns'
+ requirements:
+  _permission: 'view campaign uploader'
+
+d8campaign.landingpage:
+ path: 'signature-account-overview'
+ defaults:
+  _controller: '\Drupal\d8campaign\Controller\SignatureController::content'
+  _title: 'Signature Account Campaign'
+ requirements:
+  _permission: 'access content'
+ options:
+    no_cache: 'TRUE'
+
+d8campaign.landingpage1:
+ path: 'classic-savings-account-overview'
+ defaults:
+  _controller: '\Drupal\d8campaign\Controller\SignatureController::content_testcampaign'
+  _title: 'Classic Savings Account Campaign'
+ requirements:
+  _permission: 'access content'
+ options:
+    no_cache: 'TRUE'
+
+d8campaign.submitted:
+ path: 'already-submitted'
+ defaults:
+  _controller: '\Drupal\d8campaign\Controller\SignatureController::content_submitted'
+  _title: ''
+ requirements:
+  _permission: 'access content'
+ options:
+    no_cache: 'TRUE'
+
+d8campaign.approvalform:
+ path: 'campaign-account-approval'
+ defaults:
+  _form: '\Drupal\d8campaign\Form\ApprovalForm'
+  _title: 'Consent form'
+ requirements:
+  _permission: 'access content'
+
+d8campaign.thankyou:
+ path: 'campaign-account-thanks'
+ defaults:
+  _controller: '\Drupal\d8campaign\Controller\ThanksController::content'
+  _title: ''
+ requirements:
+  _permission: 'access content'
+
+d8campaign.sendotp:
+ path: 'sa-sendotp'
+ defaults:
+  _controller: '\Drupal\d8campaign\Controller\SendOtp::content'
+  _title: ''
+ methods:  [GET]
+ requirements:
+  _access: 'TRUE'
+
+d8campaign.otpmatch:
+ path: 'sa-otpmatch'
+ defaults:
+  _controller: '\Drupal\d8campaign\Controller\SendOtp::matchotp'
+  _title: ''
+ methods:  [GET]
+ requirements:
+  _access: 'TRUE'
+
+d8campaign.admin_settings:
+ path: 'admin/config/campaign/config'
+ defaults:
+  _form: '\Drupal\d8campaign\Form\ConfigForm'
+  _title: 'Campagin Configuration'
+ requirements:  
+  _permission: 'access administration pages'  
+ options:  
+  _admin_route: TRUE

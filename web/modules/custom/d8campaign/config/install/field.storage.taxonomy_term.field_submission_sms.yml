@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+    - d8campaign
+  enforced:
+    module:
+      - d8campaign
+id: taxonomy_term.field_submission_sms
+field_name: field_submission_sms
+entity_type: taxonomy_term
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

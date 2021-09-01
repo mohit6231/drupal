@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_email_template
+    - taxonomy.vocabulary.campaign_type
+  module:
+    - text
+    - d8campaign
+  enforced:
+    module:
+      - d8campaign
+id: taxonomy_term.campaign_type.field_email_template
+field_name: field_email_template
+entity_type: taxonomy_term
+bundle: campaign_type
+label: 'Email Template'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

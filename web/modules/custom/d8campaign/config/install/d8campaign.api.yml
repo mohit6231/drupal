@@ -1,0 +1,5 @@
+sms_username: SVC_OTP3
+sms_password: '726480'
+sms_senderid: SVCbnk
+sms_cdmaheader: SVCbnk
+sms_otp_template: "#var# is your OTP for validation of Mobile Number. It is valid for 2 minutes. Kindly do not share OTP with anyone for security reasons -SVC Bank\r\n\r\n"

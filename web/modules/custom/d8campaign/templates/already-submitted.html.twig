@@ -1,0 +1,17 @@
+{% set module_path = _self|split('/templates') %}
+<div class="signature-landing-page accepted {{type}}">
+	<div class="header-section">
+		{% if type == "signature" %}
+    		{% include '@d8campaign/campaign-header.html.twig' with {'left_logo': 'svc_bank_logo_gold.png', 'right_logo': 'signature_account_logo.png'} %}
+		{% elseif type == "classic" %}
+			{% include '@d8campaign/campaign-header.html.twig' with {'left_logo': 'classic/single-New-Logo_2016.jpg', 'right_logo': ''} %}
+		{% endif %}
+	</div>
+
+    <div class="already">
+        You are already submitted the consent form.
+    </div>
+    {{ app.request.cookies.get('campaign_path') }}
+
+    {% include '@d8campaign/campaign-footer.html.twig' %}
+</div>

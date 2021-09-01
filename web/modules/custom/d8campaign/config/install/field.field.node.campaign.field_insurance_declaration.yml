@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_insurance_declaration
+    - node.type.campaign
+  module:
+    - d8campaign
+  enforced:
+    module:
+      - d8campaign
+id: node.campaign.field_insurance_declaration
+field_name: field_insurance_declaration
+entity_type: node
+bundle: campaign
+label: 'Insurance Declaration'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

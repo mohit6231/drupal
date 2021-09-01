@@ -1,0 +1,860 @@
+@font-face {
+    font-family: 'GraphikBold';
+    src: url("fonts/GraphikBold.ttf");
+}
+
+@font-face {
+    font-family: 'GraphikRegular';
+    src: url("fonts/GraphikRegular.ttf");
+}
+
+@font-face {
+    font-family: 'GraphikLight';
+    src: url("fonts/GraphikLight.otf");
+}
+/*
+@font-face {
+    font-family: 'GraphikRegular';
+    src: url("fonts/GraphikRegular.ttf");
+}*/
+
+body.path-signature-account-overview,.path-campaign-account-thanks,.path-campaign-account-approval {
+    font-family: 'GraphikRegular';
+}
+
+
+.info-sign a {
+    background: darkblue;
+    padding: 10px 12px;
+    border-radius: 16px;
+    color: white;
+}
+.otp-input input {
+    width: 25px;
+}
+.d8campaign-approval-form .cancel-btn,.d8campaign-approval-form #edit-actions {
+    display: inline;
+}
+
+.path-signature-account-overview .region.region-breadcrumb,.path-signature-account-overview .header,.path-signature-account-overview .site-footer,
+.path-campaign-account-approval .region.region-breadcrumb,.path-campaign-account-approval .header,.path-campaign-account-approval .site-footer,
+.path-campaign-account-thanks .region.region-breadcrumb,.path-campaign-account-thanks .header,.path-campaign-account-thanks .site-footer,
+.path-already-submitted .region.region-breadcrumb,.path-already-submitted .header,.path-already-submitted .site-footer  {
+    display: none;
+}
+.path-signature-account-overview #main-wrapper,.path-campaign-account-approval #main-wrapper,.path-campaign-account-thanks #main-wrapper,.path-already-submitted #main-wrapper{
+    width: 100%;
+    max-width: 100%;
+}
+
+.path-signature-account-overview div#page-wrapper,
+.path-campaign-account-approval div#page-wrapper,
+.path-campaign-account-thanks div#page-wrapper{
+    background: white;
+    height: 100vh;
+}
+
+.signature-landing-page .header-section .top-section {
+    clear: both;
+    background: #010F25;
+    height: 60px;
+    padding: 15px 30px;
+    display: block;
+}
+.signature-landing-page .header-section .top-section .logo-left {
+    float: left;
+}
+.signature-landing-page .header-section .top-section .logo-right {
+    float: right;
+}
+
+.path-signature-account-overview .main-content .section,
+.path-campaign-account-approval .main-content .section,
+.path-campaign-account-thanks .main-content .section,
+.path-already-submitted .main-content .section{
+    padding: 0;
+}
+
+.path-signature-account-overview .layout-main,.path-signature-account-overview .block .content,
+.path-campaign-account-approval .layout-main,.path-campaign-account-approval .block .content,
+.path-campaign-account-thanks .layout-main,.path-campaign-account-thanks .block .content,
+.path-already-submitted .layout-main,.path-campaign-account-thanks .block .content
+.path-already-submitted .layout-main,.path-already-submitted .block .content{
+    margin: 0;
+}
+
+.path-campaign-account-approval .block-page-title-block,.path-campaign-account-approval .block-system-main-block,
+.path-campaign-account-thanks .block-page-title-block,.path-campaign-account-thanks .block-system-main-block {
+    padding: 0 25px;
+}
+
+.banner-overlay-content{
+    background: url('../images/signature_account_banner.jpg');
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.banner-overlay-content p:nth-child(1) {
+    font-size: 28px;
+    color: white;
+    font-family: 'GraphikLight';
+}
+.banner-overlay-content p:nth-child(2) {
+    font-size: 36px;
+    color: #C9A15B;
+    font-family: 'GraphikBold';
+    letter-spacing: 1px;
+}
+.banner-overlay-content p:nth-child(3) {
+    font-size: 24px;
+    color: #D8C29B;
+    font-family: 'GraphikLight';
+}
+.silver{
+    color: #C9A15B;
+    font-size: 21px;
+}
+.banner-overlay-content p {
+    margin: 0;
+}
+.banner-overlay-content .content {
+    padding: 56px 36px 36px 36px;
+}
+a.btn-sign {
+    padding: 12px 18px;
+    background: #C9A15B;
+    color: white;
+    border-radius: 20px;
+    font-size: 18px;
+    margin-left: 36px;
+}
+a.btn-sign:hover {
+    color: white;
+}
+
+.account-details-section .user-name {
+    text-align: center;
+    font-size: 28px;
+    color: #00406A;
+    font-family: 'GraphikLight';
+}
+.ac-detail-block {
+    background: #F3EEE6;
+    border-radius: 8px;
+    margin: 0 36px;
+    padding: 10px 20px;
+    color: #00406A;
+    position: relative;
+    height: 120px;
+}
+.ac-detail-block .ac-title {
+    text-align: center;
+    font-size: 26px;
+    margin: 0;
+    padding: 0;
+}
+.ac-detail-block .ac-number {
+    float: left;
+}
+.ac-detail-block .ac-type {
+    float: right;
+}
+.ac-number-title,.ac-type-title {
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+    font-family: 'GraphikLight';
+}
+.ac-number-value,.ac-type-value {
+    font-size: 26px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+.overview-sg-ac {
+    color: #00406A;
+    margin: 30px 36px;
+    display: inline-block;
+}
+.overview-sg-ac .section-title {
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid #00406A;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+    font-size: 32px;
+    font-weight: bold;
+}
+.overview-sg-ac .section-title span {
+    background: #fff;
+    padding: 0 10px;
+}
+.overview-sg-ac .content-section{
+    margin-top: 45px;
+}
+.overview-sg-ac .content-section p,.overview-sg-ac .content-section h2{
+    padding:0;
+    margin:0;
+}
+.overview-sg-ac .content-section h2{
+    font-size: 32px;
+    font-weight: bold;
+}
+.overview-sg-ac .content-section p{
+    font-size: 21px;
+}
+.sg-col-4 {
+    width: 31.5%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 0 29px 0 rgb(68 88 144 / 12%);
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    z-index: 1;
+    margin: 15px;
+    height: 500px;
+}
+.ac-details {
+    clear: both;
+}
+
+.overview-sg-ac .row-section .content-section{
+    margin-top: 35px;
+    padding: 0 20px;
+}
+.overview-sg-ac .row-section .content-section h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #4D5D62;
+}
+.overview-sg-ac .row-section .content-section h2 {
+    font-size: 20px;
+}
+
+.img-section img {
+    width: 100%;
+}
+.row-section .img-section {
+    height: 240px;
+    overflow-y: hidden;
+}
+
+.row-section .sg-col-4:nth-child(3) {
+    margin-right: 0;
+}
+.row-section .sg-col-4:nth-child(1) {
+    margin-left: 0;
+}
+.account-details-section, .sva-section, .overview-sg-ac {
+    clear: both;
+}
+
+.sva-section .img-section, .sva-section .content-section {
+    width: 50%;
+    float: left;
+}
+.sva-section {
+    background: #FFF3DF;
+    display: inline-block;
+}
+.sva-section .content-section .content {
+    padding: 25px;
+}
+.sva-section .content h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #00406A;
+    margin: 0;
+}
+p.sva-ul-title {
+    font-size: 21px;
+    font-weight: bold;
+    padding: 0;
+    margin: 25px 0 10px 0;
+    color: #00406A;
+}
+.sva-section .content li {
+    font-size: 20px;
+    margin: 10px 0;
+}
+p.sva-small {
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+}
+.sh-section .silver, .sh-title {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+h2.sh-title {
+    font-size: 24px !important;
+    width: 46%;
+    margin: 0 auto;
+    color: #00406A;
+    font-weight: bold;
+}
+.sh-section .row-section .sh-col-2 {
+    width: 50%;
+    float: left;
+}
+.sh-col-2 .content {
+    padding: 10px 40px;
+}
+.sh-col-2 .content li {
+    font-size: 16px;
+    margin: 10px 0;
+}
+p.sh-tc {
+    margin-left: 40px;
+}
+
+.shq-section {
+    background: #071021;
+    color: white;
+    height: 280px;
+    margin-bottom: 40px;
+}
+.l-content {
+    float: left;
+    padding: 50px;
+}
+a.btn-query {
+    padding: 12px 18px;
+    background: #C9A15B;
+    color: white;
+    border-radius: 20px;
+    font-size: 18px;
+    display: inline;
+    cursor: pointer;
+}
+.l-content p{
+    display: inline;
+    margin-left: 8px;
+}
+.R-content img {
+    width: 300px;
+    padding: 30px 50px 0 0;
+}
+.R-content {
+    float: right;
+}
+.l-content h1 {
+    color: white;
+    font-size: 34px;
+    font-weight: bold;
+}
+.sh-approve-section h1 {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #00406A;
+    width: 50%;
+    margin: 0 auto;
+}
+a.btn-info, .btn-continue {
+    padding: 10px;
+    border: 1px solid #00406A;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.sh-approve-section {
+    padding: 75px 10px;
+    background: #FFF3DF;
+}
+.sha-button {
+    text-align: center;
+    margin-top: 35px;
+}
+.btn-query:hover{
+    color:white;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    border-radius: 12px;
+  }
+  
+  /* The Close Button */
+  .close,.closefaq {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus,.closefaq:hover,.closefaq:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .btn-continue,.btn-continue:hover {
+    background: #00406A;
+    color: white;
+}
+a.btn-info {
+    background: white;
+    color: #00406A;
+    font-weight: bold;
+    margin: 10px;
+}
+.otp-section {
+    text-align: center;
+    position: relative;
+}
+.otp-section h1 {
+    font-size: 24px;
+    color: #00406A;
+    font-weight: bold;
+}
+.otp-section p {
+    font-size: 18px;
+}
+.otp-input input {
+    border: 2px solid grey;
+    border-radius: 5px;
+    margin: 10px 5px;
+    text-align: center;
+    width: 30px;
+    height: 40px;
+}
+form#otp-form .otp-submit,form#otp-form .otp-resend {
+    padding: 2px 20px;
+    border: 1px solid #C9A15B;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    background: #C9A15B;
+    color: white;
+}
+form#otp-form .otp-resend {
+    border: 1px solid grey;
+    background: grey;
+    color: white;
+}
+form#otp-form .otp-resend.disabled{
+    background-color: #CCC !important;
+    cursor: not-allowed !important;
+}
+.otp-img {
+    border-radius: 50%;
+    background: #00406A;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 1%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.FAQ-section .content{
+    display: none;
+}
+.FAQ-section .heading span {
+    float: right;
+    cursor: pointer;
+    font-size: 30px;
+    color: #C9A15B;
+    padding: 0 10px;
+}
+.FAQ-section .heading {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+.FAQ-section h1 {
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #00406A;
+}
+.faq-wrapper {
+    padding: 15px 0;
+    border-bottom: 1px solid grey;
+}
+.FAQ-section {
+    padding: 10px 30px;
+}
+
+
+.arrow:before {
+    content: "+";
+}
+.open .arrow:before {
+    content: "-";
+}
+
+.footer-two p {
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin:0;
+}
+.footer-two {
+    background: #071021;
+}
+.footer-one {
+    background: rgba(7, 16, 33, 0.7);
+    height: 130px;
+}
+.footer-one img {
+    width: 25px;
+}
+.footer-one .left-section {
+    float: left;
+    padding-left: 50px;
+}
+.footer-one .right-section {
+    float: right;
+    padding-right: 50px;
+}
+.footer-one h2 {
+    color: white;
+}
+.footer-one img {
+    width: 20px;
+    padding: 6px;
+    height: 20px;
+}
+.footer-one .right-section p {
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+}
+.path-campaign-account-approval .page-title{
+    color: #00406A;
+    font-size: 25px;
+    font-weight: bold;
+}
+form#d8campaign-approval-form h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #00406A;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+form#d8campaign-approval-form .form-type-checkbox {
+    font-size: 20px;
+    font-weight: bold;
+    background: #F3EEE6;
+    padding: 20px;
+    margin-top: 0;
+    color: #00406A;
+}
+form#d8campaign-approval-form .form-type-checkbox input {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+.accepted .footer-section {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.already{
+    color: #071021;
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+form#views-exposed-form-campaign-customers-list-page-1 {
+    border: 2px solid grey;
+    padding: 10px;
+}
+@media only screen and (min-width: 300px) and (max-width: 600px){
+    .banner-overlay-content {
+        background-position: 85% !important;
+        box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.1);
+    }
+
+    .path-classic-savings-account-overview .top-section .logo-left img {
+        width: 200px !important;
+    }
+    .header-section .top-section img{
+        width: 125px;
+    }
+    .signature-landing-page .header-section .top-section {
+        height: 38px;
+        padding: 15px 10px;
+    }
+    .header-section .top-section{
+        height: 50px;
+    }
+    .banner-overlay-content .content {
+        padding: 20px;
+    }
+    .ac-number,.ac-type{
+        float:none;
+    }
+    .ac-detail-block{
+        height:210px;
+    }
+    .sg-col-4 {
+        width: 100%;
+        margin: 15px;
+        height: auto;
+    }
+    .sva-section .img-section, .sva-section .content-section {
+        width: 100%;
+        float: left;
+    }
+    .h2.sh-title{
+        width: 100%;
+    }
+    .sh-section .row-section .sh-col-2 {
+        width: 100%;
+        float: left;
+    }
+    
+.banner-overlay-content p:nth-child(1) {
+    font-size: 24px;
+}
+.banner-overlay-content p:nth-child(2) {
+    font-size: 32px;
+}
+.banner-overlay-content p:nth-child(3) {
+    font-size: 20px;
+}
+a.btn-sign {
+    font-size: 14px;
+    margin-left: 16px;
+}
+.account-details-section .user-name{
+	font-size: 24px;
+}
+.ac-detail-block {
+    margin: 0 20px;
+}
+.ac-detail-block .ac-title {
+    font-size: 20px;
+}
+.ac-detail-block .ac-number,.ac-detail-block .ac-type {
+    float: none;
+}
+.ac-number-title, .ac-type-title {
+    font-size: 20px;
+}
+.ac-number-value, .ac-type-value {
+    font-size: 20px;
+}
+.ac-detail-block {
+    height: 160px;
+}
+.overview-sg-ac {
+    margin: 30px 20px;
+}
+.overview-sg-ac .section-title {
+    font-size: 16px;
+}
+.overview-sg-ac .content-section {
+    margin-top: 25px;
+}
+.overview-sg-ac .content-section p {
+    font-size: 18px;
+}
+.overview-sg-ac .content-section h2 {
+    font-size: 24px;
+}
+.sg-col-4 {
+    margin: 10px 0;
+}
+.silver {
+    font-size: 18px;
+}
+.sva-section .content h2 {
+    font-size: 24px;
+}
+.sva-section .content li {
+    font-size: 16px;
+}
+h2.sh-title {
+    font-size: 24px !important;
+    width: 90%;
+}
+.shq-section{
+height: 400px;
+}
+.l-content {
+    float: none;
+    padding: 5px 20px;
+}
+a.btn-query {
+    font-size: 12px;
+}
+.l-content h1 {
+    font-size: 30px;
+}
+.sh-approve-section h1 {
+    font-size: 22px;
+    width: 90%;
+    margin: 0 auto;
+}
+.footer-one {
+    height: 180px;
+}
+.footer-one .left-section {
+    float: none;
+    padding-left: 25px;
+}
+.footer-one .right-section {
+    float: none;
+    padding-left: 25px;
+}
+}
+
+/* classic page */
+.path-classic-savings-account-overview .banner-overlay-content {
+    background: url(/modules/custom/d8campaign/images/classic/classic_sa_banner.jpg);
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.path-classic-savings-account-overview .top-section .logo-left img {
+    width: 285px;
+}
+.path-classic-savings-account-overview .banner-overlay-content p:nth-child(1) {
+    font-size: 36px;
+    color: #00406A;
+    font-family: 'GraphikBold';
+}
+
+.path-classic-savings-account-overview .banner-overlay-content p:nth-child(2) {
+    font-size: 24px;
+    color: #00406A;
+    font-family: 'Graphiklight';
+    letter-spacing: 1px;
+}
+.path-classic-savings-account-overview .overview-sg-ac .content-section p {
+    color: black;
+}
+.path-classic-savings-account-overview .overview-sg-ac .content-section h2 {
+    color: rgba(55,96,146,1);
+}
+.path-classic-savings-account-overview .silver {
+    color: #00406A !important;
+    font-weight: bold;
+    font-size: 21px;
+}
+.path-classic-savings-account-overview h2.ov-title {
+    color: #00406A !important;
+}
+.path-classic-savings-account-overview .sva-section .content h2 {
+    color: rgba(55,96,146,1);
+}
+.path-classic-savings-account-overview .ac-detail-block {
+    background: #D6E6F2;
+}
+.path-classic-savings-account-overview p.sva-ul-title,.path-classic-savings-account-overview .sva-section .content li {
+    /*color: rgba(244,247,236,1);*/
+    color: #3b3b3b;
+}
+.path-classic-savings-account-overview .sh-approve-section {
+    padding: 75px 10px;
+    background: rgba(244,247,236,1);
+}
+.path-classic-savings-account-overview h2.sh-title {
+    color: rgba(55,96,146,1);
+}
+.path-classic-savings-account-overview a#faqBtn {
+    background: rgba(249,251,253,1);
+    color: black;
+    font-weight: bold;
+}
+.path-classic-savings-account-overview .region.region-breadcrumb,.path-classic-savings-account-overview .header,.path-classic-savings-account-overview .site-footer,
+.path-campaign-account-approval .region.region-breadcrumb,.path-campaign-account-approval .header,.path-campaign-account-approval .site-footer,
+.path-campaign-account-thanks .region.region-breadcrumb,.path-campaign-account-thanks .header,.path-campaign-account-thanks .site-footer,
+.path-already-submitted .region.region-breadcrumb,.path-already-submitted .header,.path-already-submitted .site-footer  {
+    display: none;
+}
+.path-classic-savings-account-overview #main-wrapper,.path-campaign-account-approval #main-wrapper,.path-campaign-account-thanks #main-wrapper,.path-already-submitted #main-wrapper{
+    width: 100%;
+    max-width: 100%;
+}
+
+.path-classic-savings-account-overview div#page-wrapper,
+.path-campaign-account-approval div#page-wrapper,
+.path-campaign-account-thanks div#page-wrapper{
+    background: white;
+    height: 100vh;
+}
+.path-classic-savings-account-overview .footer-two {
+    background: #00406A;
+}
+.path-classic-savings-account-overview .header-section .top-section {
+    background: white;
+}
+.path-classic-savings-account-overview a.btn-sign {
+    background: rgba(249, 251, 253,1);
+    color: black;
+    font-weight: bold;
+}
+.path-classic-savings-account-overview .footer-one {
+    background: #0064A6;
+}
+.path-classic-savings-account-overview .sva-section {
+    /*background: #40C778;*/
+    background: rgba(244,247,236,1);
+    display: inline-block;
+}
+.path-classic-savings-account-overview .main-content .section {
+    padding: 0;
+}
+.path-classic-savings-account-overview .block .content {
+     margin-top: 0px; 
+}
+.path-classic-savings-account-overview .layout-main {
+    margin:0;
+}
+.path-classic-savings-account-overview{
+    font-family: 'GraphikLight';
+}
+.path-classic-savings-account-overview .shq-section {
+    background: #00406A;
+}
+.path-classic-savings-account-overview .page-title,.path-signature-account-overview .page-title {
+    display: none;
+}
+
+.signature-landing-page.accepted.classic .top-section {
+    background: white;
+}
+.signature-landing-page.accepted.classic .footer-one {
+    background: #0064A6;
+    font-family: 'GraphikLight';
+}
+.signature-landing-page.accepted.classi .footer-two {
+    background: #00406A;
+    font-family: 'GraphikLight';
+}

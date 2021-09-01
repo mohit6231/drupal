@@ -1,0 +1,6 @@
+d8campaign.admin_settings:  
+  title: 'Campaign SMS configuration'  
+  route_name: d8campaign.admin_settings  
+  description: 'configuration settings for Campaign'  
+  parent: system.admin_config_system  
+  weight: 99  
