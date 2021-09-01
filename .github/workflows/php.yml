@@ -29,10 +29,7 @@ jobs:
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
 
-    - uses: actions/checkout@v2
     - name: drupal_codequality
-      with:
-        phpcs_bin_path: './vendor/bin/phpcs'
       run:  |
             composer validate 
             npm i -g phplint
