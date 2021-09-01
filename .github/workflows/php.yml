@@ -30,6 +30,8 @@ jobs:
       run: composer install --prefer-dist --no-progress
 
     - name: drupal_codequality
+      with:
+        phpcs_bin_path: './vendor/bin/phpcs'
       run:  |
             composer validate 
             npm i -g phplint
