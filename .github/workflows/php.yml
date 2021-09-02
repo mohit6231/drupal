@@ -40,6 +40,7 @@ jobs:
           phpmd web/modules/custom/ text phpmd.xml
 
     - name: drupal_codequality
+      uses: docker://hussainweb/drupalqa:php7.4
       run:  |
             composer validate 
             npm i -g phplint
